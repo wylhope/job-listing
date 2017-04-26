@@ -1,4 +1,4 @@
-<h1> Add a job </h1>
+<h1> 增加职位 </h1>
 
 <%= simple_form_for [:admin,@job] do |f| %>
 
@@ -6,8 +6,8 @@
 <%= f.input :description %>
 
 
-<%= f.input :wage_lower_bound, :label => "薪资下限" %>
-<%= f.input :wage_upper_bound, :label => "薪资上限" %>
+<%= f.input :wage_lower_bound, :label => "费用下限" %>
+<%= f.input :wage_upper_bound, :label => "费用上限" %>
 <%= f.input :contact_email %>
 <%= f.input :is_hidden %>
 <%= f.submit "Submit" %>

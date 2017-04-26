@@ -18,3 +18,170 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ //---------Navbar---------
+
+ .navbar-brand > img {
+   display: inline-block;	//图片和链接文字显示在同一行
+    margin-right: 10px; //图片和链接文字拉开一点距离
+    width: 32px; //定制图片宽度
+    height: 32px; //定制图片高度
+ }
+
+ .navbar-default {
+     background-color: #26A69A;
+     border-color: #26A69A;
+     margin-bottom: 0;
+     border-radius: 0;
+ }
+
+ .navbar-default .navbar-brand {
+     color: white;
+     padding: 10px 15px;
+     line-height: 30px;
+ }
+
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .navbar-brand:focus {
+     color: white;
+     background-color: #80d0d6;
+ }
+
+ .navbar-default .navbar-nav > li > a {
+     color: white;
+ }
+
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+     color: #e0a85c;
+     background-color: transparent;
+ }
+
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+     color: #e0a85c;
+     background-color: #e0a85c;
+ }
+
+ .navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:focus,
+ .navbar-default .navbar-nav > .open > a:hover {
+     background-color: #db8713;
+     color: #e0a85c;
+ }
+
+ .btn-warning {
+   color: #fff;//字体颜色
+   background-color: #FFB300;//背景颜色
+   border-color: #FFB300;//边框颜色
+ }
+
+ .btn-warning:hover {
+    background-color: #FF8F00;//鼠标放置在btn上的背景颜色
+    border-color: #FF8F00;//鼠标放置在btn上的边框颜色
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 8px 12px;//通过padding来决定btn的大小
+    font-size: 20px;//btn文字大小
+    letter-spacing: 5px;//调整文字间距
+    border-radius: 3px;//btn圆角
+    width: 150px;//这里用指定宽度把btn拉得更长
+}
+
+ //---------Box---------
+
+ .box {
+     background-image: url("header.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 50px;
+
+     .box-inner {
+         background-color: transparent;
+         padding-bottom: 50px;
+         margin-top: 50px;
+         margin-bottom: 250px;
+         text-align: right;
+     }
+
+     .title {
+         color: white;
+         text-align: center;
+         margin-bottom: 70px;
+         font-size: 50px;
+     }
+
+     .slogan {
+         color: white;
+         margin-top: 5px;
+         margin-bottom: 50px;
+         text-align: center;
+         font-size: 25px;
+         top: 8px;
+     }
+
+     .lead {
+         margin-bottom: 60px;
+         text-align: center;
+         color: white;
+     }
+ }
+
+ //---------Content---------
+
+ .content-section-a {
+     padding: 50px 0;
+     background-color: #f8f8f8;
+ }
+
+ .content-section-b {
+     padding: 50px 0;
+     border-top: 1px solid #e7e7e7;
+     border-bottom: 1px solid #e7e7e7;
+ }
+
+ .section-heading-spacer {
+     float: left;
+     width: 200px;
+     border-top: 3px solid #e7e7e7;
+ }
+
+ .section-heading {
+     margin-bottom: 30px;
+ }
+
+ .lead {
+     font-size: 18px;
+     font-weight: 400;
+ }
+
+ //---------Footer---------
+
+ footer {
+     color: white;
+ }
+
+ footer .footer-below {
+     padding: 25px 0;
+     background-color: #26A69A;
+ }
+
+ html { height: 100%;}
+  body { min-height: 100%; display: flex; flex-direction: column;}
+  .content { flex: 1;}
+
+ //------------后台表格---------
+ .custab{
+  border: 3px solid #ccc;
+  padding: 10px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
