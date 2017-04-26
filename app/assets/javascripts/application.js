@@ -16,4 +16,26 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require bootstrap/modal
+//= require bootstrap-sprockets
 //= require_tree .
+
+
+<!-- Script to Activate the Carousel -->
+ <script>
+
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+
+    $('#bootstrap-touch-slider').bsTouchSlider();
+
+    </script>
+
+   <script>
+    $(document).ready(function () {
+    $('.material-button-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.option').toggleClass('scale-on');
+    });
+   });
+  </script>
