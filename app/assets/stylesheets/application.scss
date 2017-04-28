@@ -194,7 +194,7 @@
      background-image: url("header.jpg");
      background-repeat: no-repeat;
      background-size: cover;
-     margin-bottom: 50px;
+     margin-bottom: -10px;
      min-width: 100%;
     height: 300px;
 
@@ -642,7 +642,9 @@
   color: #fff;
   background-color: #fff
 }
-//---------听他们怎么说----------
-.group {
-    zoom: 1;
-}
+
+//----------common-------------
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  }
